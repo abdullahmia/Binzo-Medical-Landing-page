@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ========= Initial CSS  ============ */
+h2{
+    font-size: 45px;
+    font-weight: bold;
+    color: #1E154F;
+}
+
+h3 {
+    font-size: 37px;
+    font-weight: bold;
+    color: #1E154F;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 21px;
+    color: #1E154F;
+}
+
+h5 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #1E154F;
+}
+
+p {
+    font-weight: normal;
+    font-size: 13px;
+    color: #3F4344;
+    line-height: 15px;
+}
+
+.main-button {
+    background-color: #1E154F;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 1px solid #1E154F;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.main-button:hover {
+    background-color: white;
+    color: #1E154F;
+}
+
+
+.wrapper-top {
+    padding-top: 100px;
+}
+
+.wrapper-bottom {
+    padding-bottom: 100px;
+}
+
+.quote i {
+    font-size: 30px;
+    color: #1E154F;
+}
+
+.scroll-on {
+    background-color: white;
+    padding: 14px;
+    box-shadow: 0px 63px 75px -21px rgba(30, 21, 79, 0.05);
+}
+
+
+/* ===================== BANNER SECTION ====================== */
+/* header */
+#navbar {
+    transition: 0.5s ease-in-out;
+}
+.navbar-nav li a {
+    font-size: 16px;
+    color: #1E154F !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav li a:hover {
+    color: black;
+}
+
+#banner {
+    background: url('../images/banner.png') no-repeat center;
+    background-size: cover;
+}
+
+
+/* Search Box */
+#search {
+    margin-top: -88px;
+}
+.search {
+    background: #FFFFFF;
+    box-shadow: 0px 63px 75px -21px rgba(30, 21, 79, 0.05);
+}
+.search_input {
+    width: 91%;
+    background: #FAFCFE;
+    border: 1px solid rgba(30, 21, 79, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 11px;
+}
+.search_input input{
+    border: none;
+}
+.search_input input:focus{
+    outline: none;
+}
+
+.search_box button {
+    background-color: #1E154F;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+.search_looking h6{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    color: #1E154F;
+}
+
+.search_looking_item {
+    background: #F6FAFD;
+    border-radius: 5px;
+    padding: 3px 7px;
+    display: flex;
+}
+
+.search_looking_item span {
+    font-size: 15px;
+    color: #1E154F;
+}
+.search_looking_item i {
+    padding: 6px 6px;
+}
+
+/* Services */
+.service{
+    background: #EFF6FE;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.service:hover{
+    background-color: #dde5ef;
+}
+.service img{
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Emergency Section */
+
+.emergency_item .icon {
+    width: 100px;
+    height: 66px;
+    background: #FFE8DB;
+    border-radius: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* specilist items */
+
+.specilist_items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.specilist_item {
+    background: #F3F4F9;
+    border-radius: 15px;
+}
+
+.specilist_item img {
+    width: 100.83px;
+    height: 98.53px;
+}
+
+.specilist_item h4 {
+    font-size: 18px;
+}
+
+.specilist_item p {
+    font-size: 15px;
+    color: #1E154F;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Feedback Section */
+.feedback_doctor .doctor_img {
+    width: 95px;
+    height: 89px;
+    background-color: #3F6CAF;
+    border-radius: 4px;
+}
+
+
+/* Footer */
+footer {
+    background: #F3F4F9;
+}
+
+.footer_menu {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_menu li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #1E154F;
+    font-size: 15px;
+}
+
+
+
+/* Resopnsive CSS */
+
+/* Tablates */
+
+@media (max-width: 991px) {
+    .specilist_items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobiles */
+@media (max-width: 767px) {
+    h2 {
+        font-size: 27px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    .banner .wrapper-top {
+        padding-top: 39px;
+    }
+    #search {
+        margin-top: -23px;
+    }
+    .wrapper-bottom {
+        padding-bottom: 15px;
+    }
+    .specilist_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .emergency_item .icon {
+        width: 97px;
+        height: 44px;
+    }
+    .search_looking {
+        display: none;
+    }
+}
