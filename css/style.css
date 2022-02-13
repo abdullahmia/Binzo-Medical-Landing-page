@@ -241,6 +241,11 @@ footer {
     .specilist_items {
         grid-template-columns: repeat(3, 1fr);
     }
+    .navbar-collapse {
+        background: white;
+        padding: 16px;
+        margin-top: 18px;
+    }
 }
 
 /* Mobiles */
@@ -250,6 +255,10 @@ footer {
     }
     h3{
         font-size: 28px;
+    }
+    .navbar-collapse {
+        background: white;
+        padding: 16px;
     }
     .banner .wrapper-top {
         padding-top: 39px;
